@@ -218,6 +218,7 @@
     .portal-wrap{height:78vh;}
     .topbar-title-block h1{max-width:38vw;}
   }
+  .chart-empty{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; font-size:12.5px; color:var(--slate-light); pointer-events:none;}
 </style>
 </head>
 <body>
@@ -298,9 +299,10 @@
       name: "Fibre Preparation",
       note: "Raw jute processing",
       depts: [
+        { title: "Spreading", url: "https://script.google.com/macros/s/AKfycbzUaDHReTbsghmsdCo24EaF3vhx3E87PwiQ3kphcP-X-hG4zzfonbYHArM_vaJqOHCe/exec", data: "" },
         { title: "Carding Department", url: "https://script.google.com/macros/s/AKfycbypegVeA1JwrjngyW-CiM1NZ5wB0K9TaRHhUi8l_Cq_bePwEXIOLdwGegWrv7oVPojJlw/exec", data: "" },
         { title: "Spinning", url: "https://script.google.com/macros/s/AKfycbxWvHm0nq2iUmZxqsl6NG8earrtDGXd8pPcDsfxWK9vLOP7PSigwBbh_7kj90Vp9Dcg/exec", data: "" },
-        { title: "Spreading", url: "https://script.google.com/macros/s/AKfycbzUaDHReTbsghmsdCo24EaF3vhx3E87PwiQ3kphcP-X-hG4zzfonbYHArM_vaJqOHCe/exec", data: "" },
+
       ]
     },
     {
@@ -308,8 +310,8 @@
       note: "Warp preparation",
       depts: [
         { title: "S4 Beaming", url: "https://script.google.com/macros/s/AKfycbys_A8kjzM7rD37wsbwuN1lORI2KP8z2vWGaH8bRniPLRQ_InXoZ_eDJZPpyM3999_L/exec", data: "" },
-        { title: "VL Beam", url: "https://script.google.com/macros/s/AKfycbwB4MEX8PtBD-ht9dBDjhY6gJWEMDwjRNFjGoWhJiF7aZe9REByqPLvWKJt1eSzJdedKA/exec", data: "" },
         { title: "Pre Beam", url: "https://script.google.com/macros/s/AKfycbwmKsy3Zc-7NsZgh5KMMXkLnnCgltceju1gKqnc6Opohe2uCKpIpSTJ6OvSL6CwTdyQ/exec", data: "" },
+        { title: "VL Beam", url: "https://script.google.com/macros/s/AKfycbwB4MEX8PtBD-ht9dBDjhY6gJWEMDwjRNFjGoWhJiF7aZe9REByqPLvWKJt1eSzJdedKA/exec", data: "" },
         { title: "Narrow Beam", url: "https://script.google.com/macros/s/AKfycbwQobns3wyD5tccCX6rVDMN5i0CUVdtg7s4iANSnv8VrAkqcn3QGk-w6JiFbsxgiJmlGg/exec", data: "" },
       ]
     },
@@ -327,23 +329,23 @@
       note: "Final processing and dispatch",
       depts: [
         { title: "Herackle production", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbzhIxUkD0fEErwSU_0kWh4cKKk1024OByXgV24LAdKkgkXNTouF7sk_PBiCXVhf7VNI/exec", data: "" },
-        { title: "Hemming Department", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbzfw8YQvXYxIhIpmgTXPmDscKHXBxUss8lkT5TTpyfS4kJtpbEYsIDbq4ggl_CsvfJQ/exec", data: "" },
-        { title: "Damping Department", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbxq0-3a4AfqC_qgqzSwj0DBswqPiJo9EJoCcP8fxcy21PhCyytGhdWk1BUzQ6vwouisgA/exec", data: "" },
+        { title: "Hemming Department", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbzfw8YQvXYxIhIpmgTXPmDscKHXBxUss8lkT5TTpyfS4kJtpbEYsIDbq4ggl_CsvfJQ/exec", data: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcsuYCn9PSxKUL80F0KMU6S7X0R-VZqIN5j9jjHzrbfvw_bElma4Ew1K0wXbWp0E-PhQUBFhKIBVuJ/pub?gid=2018521859&single=true&output=csv" },
+        { title: "Damping Department", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbxq0-3a4AfqC_qgqzSwj0DBswqPiJo9EJoCcP8fxcy21PhCyytGhdWk1BUzQ6vwouisgA/exec", data: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTLVtZ9jogAYMGNLKjK_741yqObOlcMuMnW0SU_nexaOEUJ_dSqEzGoNtTRV6gIGyFyneYKxnA939_b/pub?gid=661244327&single=true&output=csv" },
       ]
     },
     {
       name: "Finishing - Hessian",
       note: "Final processing and dispatch",
       depts: [
-        { title: "Lapping Production", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbyvQfFoT8oFTHug63HKXlBGvPpdx61ERVwdg1IOilPno_KAVQNe_6tagQLPLBxgYWdt/exec", data: "" },
-        { title: "Pessing Production", url: "https://script.google.com/macros/s/AKfycbyxZvMNJB0vQiIhOtLQOP22oVxkUgSmyocQHjrwwcgPStaS6_8lllnnVKUeC9b1rYwd/exec", data: "" },
+        { title: "Lapping Production", url: "https://script.google.com/a/macros/ballyjute.com/s/AKfycbyvQfFoT8oFTHug63HKXlBGvPpdx61ERVwdg1IOilPno_KAVQNe_6tagQLPLBxgYWdt/exec", data: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5wnTIRTy1_fPcmuAWiyPB3BprNFVbHx3B3St6fqvJkW3qI0IJDfBAxZzMq_1_VI4uXfDBjsfUZl00/pub?gid=58604580&single=true&output=csv" },
+        { title: "Pressing Production", url: "https://script.google.com/macros/s/AKfycbyxZvMNJB0vQiIhOtLQOP22oVxkUgSmyocQHjrwwcgPStaS6_8lllnnVKUeC9b1rYwd/exec", data: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRNTrxzpns5HWzhYyslKV_89yzkieGhdJakqcef8I_w9jxS849qsjJX1P9ntwN0sglM8kKVKx0dve5g/pub?gid=1646029873&single=true&output=csv" },
       ]
     },
   ];
 
   // ============ state ============
   let currentView = "overview";
-  let barChart = null, donutChart = null, dataChart = null;
+  let barChart = null, donutChart = null, dataChart = null, liveCharts = {};
   let sidebarCollapsed = false;
   let dataResults = {};          // key -> { status, records, metric, error }
 
@@ -568,10 +570,29 @@
 
       <div class="section-title">Live Production Data <small id="dataStamp"></small></div>
       <div class="stat-row" id="dataStats"></div>
-      <div class="chart-card">
-        <h3>${escapeHtml(METRIC_LABEL)} by Department</h3>
-        <div class="chart-note" id="dataNote"></div>
-        <div class="chart-holder"><canvas id="dataBarChart"></canvas></div>
+      <div class="chart-grid" style="grid-template-columns:1fr 1fr">
+        <div class="chart-card">
+          <h3>Records by Section</h3>
+          <div class="chart-note">Rows entered in each production section</div>
+          <div class="chart-holder"><canvas id="secRecChart"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>${escapeHtml(METRIC_LABEL)} by Section</h3>
+          <div class="chart-note" id="dataNote"></div>
+          <div class="chart-holder"><canvas id="secMetChart"></canvas></div>
+        </div>
+      </div>
+      <div class="chart-grid" style="grid-template-columns:1fr 1fr">
+        <div class="chart-card">
+          <h3>Records by Department</h3>
+          <div class="chart-note">Rows entered in each department</div>
+          <div class="chart-holder"><canvas id="depRecChart"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>${escapeHtml(METRIC_LABEL)} by Department</h3>
+          <div class="chart-note">Sum of the value column in each department's sheet</div>
+          <div class="chart-holder"><canvas id="depMetChart"></canvas></div>
+        </div>
       </div>
       <div class="chart-card">
         <h3>Department Data Status</h3>
@@ -657,7 +678,7 @@
     if(!withData.length){
       statsEl.innerHTML = '';
       note.textContent = 'No data links yet. Add a "Publish to web" CSV link in the data field of a department in STAGES.';
-      drawDataChart([], []);
+      drawLiveCharts([]);
       return;
     }
 
@@ -674,30 +695,60 @@
     const stamp = document.getElementById('dataStamp');
     if(!initial && stamp) stamp.textContent = 'Updated ' + new Date().toLocaleTimeString();
 
-    if(initial){ note.textContent = 'Loading data…'; drawDataChart([], []); return; }
-    note.textContent = failed.length
+    if(initial){ note.textContent = 'Loading data…'; drawLiveCharts([]); return; }
+    const allZero = ok.length && ok.every(d => !dataResults[d.key].metric);
+    note.textContent = allZero ? 'All totals are 0: set METRIC_COLUMN to the exact header of your numeric column (see console, F12).' : failed.length
       ? failed.length + ' sheet(s) failed to load. Check that each is published to the web as CSV (see browser console, F12).'
       : 'Read from each department\'s published Google Sheet';
-    drawDataChart(ok.map(d => d.title), ok.map(d => dataResults[d.key].metric));
+    drawLiveCharts(ok);
   }
 
-  function drawDataChart(labels, values){
-    if(typeof Chart === 'undefined') return;
-    if(dataChart){ dataChart.destroy(); dataChart = null; }
-    const ctx = document.getElementById('dataBarChart');
+  function drawBar(id, labels, values, label, color, horizontal){
+    if(liveCharts[id]){ liveCharts[id].destroy(); delete liveCharts[id]; }
+    const ctx = document.getElementById(id);
     if(!ctx) return;
-    dataChart = new Chart(ctx, {
+    const holder = ctx.parentElement;
+    const old = holder.querySelector('.chart-empty'); if(old) old.remove();
+    if(typeof Chart === 'undefined'){
+      const m = document.createElement('div'); m.className = 'chart-empty';
+      m.textContent = 'Chart library did not load (cdnjs blocked?). Host chart.umd.min.js next to this file.';
+      holder.appendChild(m); return;
+    }
+    if(horizontal) holder.style.height = Math.max(230, labels.length * 28 + 50) + 'px';
+    if(!values.length || values.every(v => !v)){
+      const m = document.createElement('div'); m.className = 'chart-empty';
+      m.textContent = values.length ? 'All values are 0 for the loaded sheets' : 'No data loaded yet';
+      holder.appendChild(m);
+    }
+    const num = { beginAtZero:true, grid:{ color:'#E5E0D7' }, ticks:{ font:{ family:'Inter', size:11 } } };
+    const cat = { grid:{ display:false }, ticks:{ font:{ family:'Inter', size:11 } } };
+    liveCharts[id] = new Chart(ctx, {
       type: 'bar',
-      data: { labels, datasets: [{ label: METRIC_LABEL, data: values, backgroundColor: '#1F3B57', borderRadius: 4, maxBarThickness: 38 }] },
+      data: { labels, datasets: [{ label, data: values, backgroundColor: color, borderRadius: 4, maxBarThickness: 34 }] },
       options: {
+        indexAxis: horizontal ? 'y' : 'x',
         responsive:true, maintainAspectRatio:false,
-        scales:{
-          x:{ grid:{ display:false }, ticks:{ font:{ family:'Inter', size:11 } } },
-          y:{ beginAtZero:true, ticks:{ font:{ family:'Inter', size:11 } }, grid:{ color:'#E5E0D7' } }
-        },
+        scales: horizontal ? { x: num, y: cat } : { x: cat, y: num },
         plugins:{ legend:{ display:false } }
       }
     });
+  }
+
+  function drawLiveCharts(ok){
+    const secs = [];
+    STAGES.forEach(st => {
+      const rows = ok.filter(d => d.stage === st.name);
+      if(!rows.length) return;
+      secs.push({
+        name: st.name,
+        rec: rows.reduce((a, d) => a + dataResults[d.key].records, 0),
+        met: rows.reduce((a, d) => a + dataResults[d.key].metric, 0)
+      });
+    });
+    drawBar('secRecChart', secs.map(x => x.name), secs.map(x => x.rec), 'Records', '#B9822F', false);
+    drawBar('secMetChart', secs.map(x => x.name), secs.map(x => x.met), METRIC_LABEL, '#1F3B57', false);
+    drawBar('depRecChart', ok.map(d => d.title), ok.map(d => dataResults[d.key].records), 'Records', '#B9822F', true);
+    drawBar('depMetChart', ok.map(d => d.title), ok.map(d => dataResults[d.key].metric), METRIC_LABEL, '#1F3B57', true);
   }
 
   function drawCharts(){
